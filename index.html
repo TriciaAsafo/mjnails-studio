@@ -1,137 +1,196 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ NAILS & PERFUMES</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ Nails Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <h1>MJ NAILS & PERFUMES</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#perfumes">PERFUMES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>MJ Nails Studio</h1>
+      <p class="tagline">Indulge in elegance – From your fingertips to your toes</p>
+      <div class="cta-buttons">
+        <a href="#booking" class="btn primary">Book Appointment</a>
+        <a href="#services" class="btn secondary">View Services</a>
+      </div>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="video-background">
-            <video autoplay muted loop id="hero-video">
-                <source src="videos/backgroundhero.mp4" type="video/mp4">
-                <!-- Fallback image if video doesn't load -->
-                Your browser does not support HTML5 video.
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h2>PAMPER YOURSELF WITH LUXURY</h2>
-            <p>EXPERIENCE THE FINEST NAIL CARE AND RELAXING MASSAGES</p>
-            <a href="#services" class="btn">EXPLORE SERVICES</a>
-        </div>
-    </section>
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <div class="about-content">
+      <p>At MJ Nails Studio, we blend art, care, and relaxation to give your hands and feet the pampering they deserve. Whether at our studio or in the comfort of your home, every detail is crafted for luxury.</p>
+      <p>Founded by Joyce Koffi-Simmons, MJ Nails is built on a passion for precision, hygiene, and exceptional client service. Whether you're visiting for a quick refresh or indulging in a full self-care session, our treatments are thoughtfully designed to promote both beauty and relaxation.</p>
+      <p class="highlight">Walk in stressed, walk out glowing.</p>
+    </div>
+  </section>
 
-    <section id="services" class="services">
-        <h2>OUR SERVICES</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <img src="images/Manicure.jpg" alt="Manicure">
-                <h3>MANICURE</h3>
-                <p>REJUVENATE YOUR HANDS WITH OUR PROFESSIONAL MANICURE SERVICE</p>
-            </div>
-            <div class="service-card">
-                <img src="images/pedicure.webp" alt="Pedicure">
-                <h3>PEDICURE</h3>
-                <p>RELAX AND REFRESH YOUR FEET WITH OUR LUXURIOUS PEDICURE</p>
-            </div>
-            <div class="service-card">
-                <img src="images/acrylic manicure.jpeg" alt="Acrylic Nails">
-                <h3>ACRYLIC NAILS</h3>
-                <p>GET BEAUTIFUL, LONG-LASTING ACRYLIC NAILS IN VARIOUS DESIGNS</p>
-            </div>
-            <div class="service-card">
-                <img src="images/gel manicure.jpg" alt="Gel Nails">
-                <h3>GEL NAILS</h3>
-                <p>SHINE WITH OUR DURABLE AND GLOSSY GEL NAIL SERVICES</p>
-            </div>
-            <div class="service-card">
-                <img src="images/hand massage.jpg" alt="Hand Massage">
-                <h3>HAND MASSAGE</h3>
-                <p>RELAXING HAND MASSAGE TO RELEASE TENSION AND IMPROVE CIRCULATION</p>
-            </div>
-            <div class="service-card">
-                <img src="images/foot reflexology.jpg" alt="Foot Massage">
-                <h3>FOOT MASSAGE</h3>
-                <p>SOOTHE YOUR FEET WITH OUR REJUVENATING FOOT MASSAGE</p>
-            </div>
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/Manicure.jpg" alt="Manicure">
         </div>
-    </section>
+        <div class="service-info">
+          <h3>Manicure</h3>
+          <p>Classic or luxury cuticle care with polish. Perfectly shaped nails and polished hands that speak elegance and care.</p>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/pedicure.webp" alt="Pedicure">
+        </div>
+        <div class="service-info">
+          <h3>Pedicure</h3>
+          <p>Gentle exfoliation and polish for soft, clean feet. Leaves your feet soft, fresh, and completely relaxed.</p>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/gel manicure.jpg" alt="Gel Nails">
+        </div>
+        <div class="service-info">
+          <h3>Gel Nails</h3>
+          <p>Long lasting shine in your favorite color. Glossy, chip-resistant color that lasts for weeks with a flawless finish.</p>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/acrylic manicure.jpeg" alt="Acrylic Nails">
+        </div>
+        <div class="service-info">
+          <h3>Acrylic Nails</h3>
+          <p>Sculpted nails with custom shapes and nail art. Your desired shape, strength, and vibrant color.</p>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/handmassage.jpg" alt="Hand Massage">
+        </div>
+        <div class="service-info">
+          <h3>Hand Massage</h3>
+          <p>Relaxing massage for stress relief. Rejuvenate your hands with a soothing and hydrating massage.</p>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/legmassage.jpg" alt="Leg Massage">
+        </div>
+        <div class="service-info">
+          <h3>Leg Massage</h3>
+          <p>Smooth and soothe tired legs with essential oils. Relieve tension and boost circulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="perfumes" class="perfumes">
-        <h2>PERFUME COLLECTIONS</h2>
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="female">FEMALE</button>
-            <button class="filter-btn" data-filter="male">MALE</button>
+  <section class="gallery-booking-container">
+    <div id="gallery" class="gallery-section">
+      <h2>Nail Art Inspiration</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/nails.jpeg" alt="Floral nail art design">
         </div>
-        <div class="perfume-container">
-            <!-- Perfumes will be loaded here by JavaScript -->
+        <div class="gallery-item">
+          <img src="images/nailgallery3.jpg" alt="French tip with gold accents">
         </div>
-        <div class="perfume-navigation">
-            <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <span id="page-info">1/3</span>
-            <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="gallery-item">
+          <img src="images/nailsgallery1.jpg" alt="Marble effect nails">
         </div>
-    </section>
+        <div class="gallery-item">
+          <img src="images/nailsgallery2.jpg" alt="Geometric nail art">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery4.jpg" alt="Glitter ombre nails">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery5.jpg" alt="Abstract art nails">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery6.jpg" alt="Minimalist nail design">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery7.jpg" alt="Holiday themed nails">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery8.jpg" alt="Animal print nails">
+        </div>
+        <div class="gallery-item">
+          <img src="images/nailsgallery9.jpg" alt="Animal print nails">
+        </div>
+        <div class="gallery-item">
+            <img src="images/groundback.jpg" alt="Animal print nails">
+          </div>
+          <div class="gallery-item">
+            <img src="images/nailgallery10.jpg" alt="Animal print nails">
+          </div>
+      </div>
+    </div>
 
-    <section id="contact" class="contact">
-        <h2>BOOK AN APPOINTMENT</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>VISIT OUR SALON</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 BEAUTY STREET, CITY</p>
-                <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                <p><i class="fas fa-envelope"></i> info@mjnailsperfumes.com</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h3>BOOK YOUR SESSION</h3>
-                <form id="appointment-form">
-                    <input type="text" placeholder="YOUR NAME" required>
-                    <input type="email" placeholder="YOUR EMAIL" required>
-                    <input type="tel" placeholder="PHONE NUMBER" required>
-                    <select required>
-                        <option value="">SELECT SERVICE</option>
-                        <option value="manicure">Manicure</option>
-                        <option value="pedicure">Pedicure</option>
-                        <option value="acrylic">Acrylic Nails</option>
-                        <option value="gel">Gel Nails</option>
-                        <option value="hand-massage">Hand Massage</option>
-                        <option value="foot-massage">Foot Massage</option>
-                    </select>
-                    <input type="datetime-local" required>
-                    <textarea placeholder="SPECIAL REQUESTS (OPTIONAL)"></textarea>
-                    <button type="submit" class="btn">BOOK NOW</button>
-                </form>
-            </div>
+    <div id="booking" class="booking">
+      <h2 class="section-title">Book an Appointment</h2>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
-    </section>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="manicure">Manicure</option>
+            <option value="pedicure">Pedicure</option>
+            <option value="gel-nails">Gel Nails</option>
+            <option value="acrylic-nails">Acrylic Nails</option>
+            <option value="hand-massage">Hand Massage</option>
+            <option value="leg-massage">Leg Massage</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2012 MJ NAILS & PERFUMES BY JOYCE KOFFI-SIMMONS. ALL RIGHTS RESERVED.</p>
-    </footer>
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: <a href="mailto:mjnails@gmail.com">mjnails@gmail.com</a></p>
+    <p>Phone: <a href="tel:+233245405207">+233 245 405 207</a> / <a href="tel:+233531660631">+233 531 660 631</a></p>
+    <p>Location: Omanyeaba Avenue C17/111, Lashibi</p>
+  </section>
 
-    <script src="java/java.js"></script>
+  <footer>
+    &copy; 2010 MJ Nails Studio. All rights reserved.
+  </footer>
+
+  <script src="java/java.js"></script>
 </body>
 </html>

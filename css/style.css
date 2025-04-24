@@ -1,385 +1,307 @@
 /* General Styles */
-* {
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
-body {
-  background-color: #fff5f7; /* Soft pink background */
+  background-color: #f8e8e8;
   color: #333;
   line-height: 1.6;
 }
 
-header {
-  background-color: #ffebee; /* Light pink header */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-}
-
-.logo-container h1 {
-  color: #d81b60; /* Deep pink for logo */
-  font-size: 1.8rem;
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 2rem;
-}
-
-nav ul li a {
+a {
   text-decoration: none;
-  color: #880e4f; /* Dark pink for nav links */
-  font-weight: 600;
-  transition: color 0.3s;
+  color: inherit;
 }
 
-nav ul li a:hover {
-  color: #ec407a; /* Medium pink for hover */
-}
-
-/* Hero Section with Video Background */
+/* Hero Section */
 .hero {
-  height: 100vh;
   position: relative;
+  height: 100vh;
+  background-image: url('../images/background-nail.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  overflow: hidden;
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.video-background video {
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(216, 27, 96, 0.3); /* Pink overlay */
-  z-index: -1;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
-.hero-content h2 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 4rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content p {
+.tagline {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
-  background-color: #ec407a; /* Medium pink button */
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border: none;
+  padding: 12px 30px;
+  margin: 0 10px;
   border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: #9e2b6e; /* Deep pink */
+  color: white;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
 .btn:hover {
-  background-color: #d81b60; /* Darker pink on hover */
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Services Section */
-.services {
-  padding: 5rem 5%;
-  background-color: #fce4ec; /* Light pink background */
+/* Sections */
+section {
+  padding: 80px 20px;
 }
 
-.services h2, .perfumes h2, .contact h2 {
+.about-section, .services-section, .contact {
+  background-color: #f0f7ee;
+}
+
+.about-section h2, .services-section h2, .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #880e4f; /* Dark pink for headings */
+  margin-bottom: 50px;
+  color: #1a3e1e; /* Deep green */
 }
 
-.services-container {
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: 500;
+  color: #9e2b6e; /* Deep pink */
+  margin-top: 30px;
+}
+
+/* Services Section */
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {
-  background-color: #fff5f7; /* Soft pink cards */
+  background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
 }
 
-.service-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.service-card h3 {
-  padding: 1rem;
-  font-size: 1.5rem;
-  color: #c2185b; /* Medium-dark pink */
-}
-
-.service-card p {
-  padding: 0 1rem 1.5rem;
-}
-
-/* Perfumes Section */
-.perfumes {
-  padding: 5rem 5%;
-  background-color: #f8bbd0; /* Medium-light pink */
-}
-
-.filter-buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-  gap: 1rem;
-}
-
-.filter-btn {
-  padding: 0.5rem 1.5rem;
-  background-color: #fce4ec; /* Light pink */
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s;
-  color: #880e4f; /* Dark pink text */
-}
-
-.filter-btn.active {
-  background-color: #ec407a; /* Medium pink */
-  color: white;
-}
-
-.perfume-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.perfume-card {
-  background-color: #fff5f7; /* Soft pink */
-  border-radius: 10px;
+.service-image {
+  height: 200px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
 }
 
-.perfume-card:hover {
-  transform: translateY(-5px);
-}
-
-.perfume-card img {
+.service-image img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.perfume-info {
-  padding: 1rem;
+.service-card:hover .service-image img {
+  transform: scale(1.1);
 }
 
-.perfume-info h3 {
-  color: #c2185b; /* Medium-dark pink */
-  margin-bottom: 0.5rem;
+.service-info {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-.perfume-info p {
-  color: #666;
-  margin-bottom: 0.5rem;
+.service-info h3 {
+  color: #1a3e1e; /* Deep green */
+  margin-top: 0;
 }
 
-.price {
-  font-weight: bold;
-  color: #880e4f; /* Dark pink */
-}
-
-.perfume-navigation {
+/* Gallery & Booking Container */
+.gallery-booking-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  background-color: #f8e8e8;
+  padding: 0;
 }
 
-.perfume-navigation button {
-  background-color: #ec407a; /* Medium pink */
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s;
+.gallery-section, .booking {
+  flex: 1;
+  padding: 40px;
 }
 
-.perfume-navigation button:hover {
-  background-color: #d81b60; /* Darker pink */
+.gallery-section {
+  background-color: #e8f5e9;
 }
 
-/* Contact/Appointment Section */
-.contact {
-  padding: 5rem 5%;
-  background-color: #fce4ec; /* Light pink */
+.booking {
+  background-color: #fce4ec;
 }
 
-.contact-container {
+/* Gallery */
+.gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Booking Form */
+form {
+  max-width: 500px;
   margin: 0 auto;
 }
 
-.contact-info {
-  background-color: #fff5f7; /* Soft pink */
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.form-group {
+  margin-bottom: 20px;
 }
 
-.contact-info h3 {
-  color: #c2185b; /* Medium-dark pink */
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a3e1e; /* Deep green */
+  font-weight: 500;
 }
 
-.contact-info p {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.social-icons a {
-  color: #880e4f; /* Dark pink */
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ec407a; /* Medium pink */
-}
-
-.contact-form {
-  background-color: #fff5f7; /* Soft pink */
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h3 {
-  color: #c2185b; /* Medium-dark pink */
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+input, select, textarea {
   width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #f8bbd0; /* Medium-light pink border */
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Poppins', sans-serif;
 }
 
-.contact-form textarea {
-  height: 120px;
-  resize: vertical;
+button[type="submit"] {
+  background-color: #1a3e1e; /* Deep green */
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0f2912; /* Darker green */
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #9e2b6e; /* Deep pink */
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #7a1f55; /* Darker pink */
 }
 
 /* Footer */
 footer {
-  background-color: #880e4f; /* Dark pink */
-  color: white;
   text-align: center;
-  padding: 2rem;
-  margin-top: 3rem;
+  padding: 20px;
+  background-color: #1a3e1e; /* Deep green */
+  color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      padding: 1rem;
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .logo-container {
-      margin-bottom: 1rem;
+  
+  .gallery-booking-container {
+    flex-direction: column;
   }
-
-  nav ul {
-      flex-direction: column;
-      align-items: center;
+  
+  .hero h1 {
+    font-size: 2.5rem;
   }
-
-  nav ul li {
-      margin: 0.5rem 0;
+  
+  .tagline {
+    font-size: 1.2rem;
   }
+}
 
-  .hero-content h2 {
-      font-size: 2rem;
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
-
-  .hero-content p {
-      font-size: 1.2rem;
+  
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    margin: 10px 0;
+    width: 80%;
   }
 }
